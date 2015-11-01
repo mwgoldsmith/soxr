@@ -25,14 +25,6 @@
       <Configuration>ReleaseDLL</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="ReleaseLTO|Win32">
-      <Configuration>ReleaseLTO</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="ReleaseLTO|x64">
-      <Configuration>ReleaseLTO</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
@@ -43,86 +35,63 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C3CEF41A-9096-449D-B6B5-0A82A8C3F3C9}</ProjectGuid>
+    <ProjectGuid>{85763F39-FFFF-4C04-B7DF-7FBE3E7CF336}</ProjectGuid>
     <RootNamespace>libsoxr</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
-    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -139,13 +108,7 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
@@ -156,54 +119,45 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>..\..\..\msvc32\</OutDir>
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxrd</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxrd</TargetName>
-    <OutDir>..\..\..\msvc64\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
-    <OutDir>..\..\..\msvc32\</OutDir>
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxrd</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxrd</TargetName>
-    <OutDir>..\..\..\msvc64\</OutDir>
+    <OutDir>$(ProjectDir)..\..\..\msvc32\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>..\..\..\msvc32\</OutDir>
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">
-    <OutDir>..\..\..\msvc32\</OutDir>
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
-    <OutDir>..\..\..\msvc64\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
-    <OutDir>..\..\..\msvc64\</OutDir>
+    <OutDir>$(ProjectDir)..\..\..\msvc32\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
-    <OutDir>..\..\..\msvc32\</OutDir>
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
+    <OutDir>$(ProjectDir)..\..\..\msvc32\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>$(ProjectDir)..\..\..\msvc32\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\..\..\msvc64\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\..\..\msvc64\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
-    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
-    <TargetName>libsoxr</TargetName>
-    <OutDir>..\..\..\msvc64\</OutDir>
+    <OutDir>$(ProjectDir)..\..\..\msvc64\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <OutDir>$(ProjectDir)..\..\..\msvc64\</OutDir>
+    <IntDir>$(OutDir)obj\$(Configuration)\$(ConfigurationType)\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+    <LinkIncremental />
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -211,7 +165,7 @@
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -228,14 +182,14 @@
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -245,7 +199,7 @@ del ..\soxr-config.h
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -262,14 +216,14 @@ del ..\soxr-config.h
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -279,7 +233,7 @@ del ..\soxr-config.h
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_MATH_DEFINES;SOXR_LIB;SOXR_DLL;soxr_EXPORTS;soxr_lsr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -297,14 +251,14 @@ del ..\soxr-config.h
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -314,7 +268,7 @@ del ..\soxr-config.h
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USE_MATH_DEFINES;SOXR_LIB;SOXR_DLL;soxr_EXPORTS;soxr_lsr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
@@ -331,14 +285,14 @@ del ..\soxr-config.h
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -358,7 +312,7 @@ del ..\soxr-config.h
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -378,14 +332,14 @@ del ..\soxr-config.h
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -405,7 +359,7 @@ del ..\soxr-config.h
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -425,14 +379,14 @@ del ..\soxr-config.h
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -453,7 +407,7 @@ del ..\soxr-config.h
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -472,14 +426,14 @@ del ..\soxr-config.h
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -500,7 +454,7 @@ del ..\soxr-config.h
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -519,14 +473,14 @@ del ..\soxr-config.h
     </Lib>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -547,7 +501,7 @@ del ..\soxr-config.h
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;SOXR_DLL;soxr_EXPORTS;soxr_lsr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -565,14 +519,14 @@ del ..\soxr-config.h
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -593,7 +547,7 @@ del ..\soxr-config.h
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>false</FloatingPointExceptions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;SOXR_LIB;SOXR_DLL;soxr_EXPORTS;soxr_lsr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories><AdditionalIncludeDirectories>.\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>false</ExceptionHandling>
       <DisableSpecificWarnings>4013;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <OpenMPSupport>true</OpenMPSupport>
@@ -610,56 +564,56 @@ del ..\soxr-config.h
     </Link>
     <PostBuildEvent>
       <Command>mkdir $(OutDir)\include
-copy ..\src\soxr.h $(OutDir)\include
-copy ..\src\soxr-lsr.h $(OutDir)\include
+copy ..\..\src\soxr.h $(OutDir)\include
+copy ..\..\src\soxr-lsr.h $(OutDir)\include
 mkdir $(OutDir)\licenses
-copy ..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
+copy ..\..\COPYING.LGPL $(OutDir)\licenses\soxr.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist ..\soxr-config.h (
-del ..\soxr-config.h
+      <Command>if exist ..\..\soxr-config.h (
+del ..\..\soxr-config.h
 )</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\data-io.c" />
-    <ClCompile Include="..\src\dbesi0.c" />
-    <ClCompile Include="..\src\fft4g.c" />
-    <ClCompile Include="..\src\fft4g32.c" />
-    <ClCompile Include="..\src\fft4g64.c" />
-    <ClCompile Include="..\src\filter.c" />
-    <ClCompile Include="..\src\lsr.c" />
-    <ClCompile Include="..\src\pffft32s.c" />
-    <ClCompile Include="..\src\rate32.c" />
-    <ClCompile Include="..\src\rate32s.c" />
-    <ClCompile Include="..\src\rate64.c" />
-    <ClCompile Include="..\src\simd.c" />
-    <ClCompile Include="..\src\soxr.c" />
-    <ClCompile Include="..\src\vr32.c" />
+    <ClCompile Include="..\..\src\data-io.c" />
+    <ClCompile Include="..\..\src\dbesi0.c" />
+    <ClCompile Include="..\..\src\fft4g.c" />
+    <ClCompile Include="..\..\src\fft4g32.c" />
+    <ClCompile Include="..\..\src\fft4g64.c" />
+    <ClCompile Include="..\..\src\filter.c" />
+    <ClCompile Include="..\..\src\lsr.c" />
+    <ClCompile Include="..\..\src\pffft32s.c" />
+    <ClCompile Include="..\..\src\rate32.c" />
+    <ClCompile Include="..\..\src\rate32s.c" />
+    <ClCompile Include="..\..\src\rate64.c" />
+    <ClCompile Include="..\..\src\simd.c" />
+    <ClCompile Include="..\..\src\soxr.c" />
+    <ClCompile Include="..\..\src\vr32.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\aliases.h" />
-    <ClInclude Include="..\src\ccrw2.h" />
-    <ClInclude Include="..\src\data-io.h" />
-    <ClInclude Include="..\src\fft4g.h" />
-    <ClInclude Include="..\src\fft4g_cache.h" />
-    <ClInclude Include="..\src\fifo.h" />
-    <ClInclude Include="..\src\filter.h" />
-    <ClInclude Include="..\src\filters.h" />
-    <ClInclude Include="..\src\half-fir.h" />
-    <ClInclude Include="..\src\half_coefs.h" />
-    <ClInclude Include="..\src\internal.h" />
-    <ClInclude Include="..\src\pffft.h" />
-    <ClInclude Include="..\src\poly-fir.h" />
-    <ClInclude Include="..\src\poly-fir0.h" />
-    <ClInclude Include="..\src\rate.h" />
-    <ClInclude Include="..\src\rdft.h" />
-    <ClInclude Include="..\src\rint-clip.h" />
-    <ClInclude Include="..\src\rint.h" />
-    <ClInclude Include="..\src\simd-dev.h" />
-    <ClInclude Include="..\src\simd.h" />
-    <ClInclude Include="..\src\soxr-lsr.h" />
-    <ClInclude Include="..\src\soxr.h" />
+    <ClInclude Include="..\..\src\aliases.h" />
+    <ClInclude Include="..\..\src\ccrw2.h" />
+    <ClInclude Include="..\..\src\data-io.h" />
+    <ClInclude Include="..\..\src\fft4g.h" />
+    <ClInclude Include="..\..\src\fft4g_cache.h" />
+    <ClInclude Include="..\..\src\fifo.h" />
+    <ClInclude Include="..\..\src\filter.h" />
+    <ClInclude Include="..\..\src\filters.h" />
+    <ClInclude Include="..\..\src\half-fir.h" />
+    <ClInclude Include="..\..\src\half_coefs.h" />
+    <ClInclude Include="..\..\src\internal.h" />
+    <ClInclude Include="..\..\src\pffft.h" />
+    <ClInclude Include="..\..\src\poly-fir.h" />
+    <ClInclude Include="..\..\src\poly-fir0.h" />
+    <ClInclude Include="..\..\src\rate.h" />
+    <ClInclude Include="..\..\src\rdft.h" />
+    <ClInclude Include="..\..\src\rint-clip.h" />
+    <ClInclude Include="..\..\src\rint.h" />
+    <ClInclude Include="..\..\src\simd-dev.h" />
+    <ClInclude Include="..\..\src\simd.h" />
+    <ClInclude Include="..\..\src\soxr-lsr.h" />
+    <ClInclude Include="..\..\src\soxr.h" />
     <ClInclude Include="soxr-config.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
